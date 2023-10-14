@@ -1,7 +1,221 @@
-<h1>Benoit Chamot's Pages</h1>
-<h2>Pages</h2>
-<ul>
-    <li><a href="https://benoitchamot.github.io/MONU_project3/">Movie Nerd</a> (super dashboard)</li>
-    <li><a href="https://benoitchamot.github.io/belly-button-challenge/">belly-button-challenge</a> (dashboard)</li>
-    <li><a href="https://benoitchamot.github.io/fitness_data/">fitness_data</a> (dashboard)</li>
-</ul>
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Benoit Chamot's Portfolio</title>
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
+        <link rel="manifest" href="static/favicon/site.webmanifest">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+
+        <!-- CSS -->
+        <link href="static/css/style.css" rel="stylesheet">
+        <link href="static/css/slideshow.css" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <div id="body-container" class="container">
+            <div class="p-5 my-0 bg-light rounded-7">
+                <h1>Benoit Chamot's Portfolio</h1>
+                <p class="lead">Find out more about me, my projects and my experience. To contact me: message me on <a href="https://linkedin.com/in/benoitchamot" class="text-dark" target="_blank">LinkedIn</a> or email me at<br/> benoit [dot] chamot [at] gmail [dot] com </p>
+            </div>
+
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <div class="container">
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav">
+                            <a href="#anchor-projects" class="nav-item nav-link">Selected projects</a>
+                            <a href="#anchor-aboutme" class="nav-item nav-link">About me</a>
+                            <a href="#anchor-programs" class="nav-item nav-link">Experience</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="row p-4 m-0" id="row_projects">
+                <a id="anchor-projects"><h1>Selected projects</h1></a>
+                <h2>Dashboards</h2>
+                <p>Built with HTML/CSS/JavaScript</p>
+                <div class="col-md-12">
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides">
+                            <h3>Movie Nerd (super dashboard)</h3>
+                            <img src="img1.jpg" style="width:50%">
+                            <div class="text">
+                                Caption Text
+                                <a href="https://benoitchamot.github.io/MONU_project3/" target="_blank">Go to dashboard</a>
+                            </div>
+                        </div>
+  
+                        <div class="mySlides">
+                            <h3>Belly button data (dashboard)</h3>
+                            <img src="img2.jpg" style="width:50%">
+                            <div class="text">
+                                Caption Text
+                                <a href="https://benoitchamot.github.io/belly-button-challenge/" target="_blank">Go to dashboard</a>
+                            </div>
+                        </div>
+  
+                        <div class="mySlides">
+                            <h3>Earthquakes (map dashboard)</h3>
+                            <img src="img3.jpg" style="width:50%">
+                            <div class="text">
+                                Caption Text
+                                <a href="https://benoitchamot.github.io/MONU_project3/" target="_blank">Go to dashboard</a>
+                            </div>
+                        </div>
+    
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br/>
+                </div>
+                
+
+                <!-- TABLEAU -->
+                <div class="col-md-6">
+                    <h2>Tableau</h2>
+                    <p>I have built several visualisations on Tableau Public using data from a variety of sources.</p>
+                    <p>The screenshot below comes from a dashboard I created to visualise CitiBike rides from Jersey City.
+                        I found usage patterns to identify commuters living in Jersey City and working in New York City. 
+                    </p>
+                    <a href="https://public.tableau.com/app/profile/benoit.chamot/viz/Citybike_16962868579120/Citibike" target="_blank">See the CitiBike project on Tableau Public</a>
+
+                    <img src="static/img/tableau_citibike.png" width="100%"/>
+                </div>
+
+                <!-- NOTEBOOKS -->
+                <div class="col-md-6">
+                    <h2>Jupyter Notebooks</h2>
+                    <p>Available in GitHub</p>
+                    <ul>
+                        <li><a href="https://github.com/benoitchamot/credit-risk-classification/blob/main/credit_risk_classification.ipynb" target="_blank">Credit Risk Classification</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row p-4 m-0" id="row_about">
+                <a id="anchor-aboutme"><h1>About me</h1></a>
+                
+                <div class="col-md-4">
+                    <h2>Who am I?</h2>
+                    <p>My name is Benoit, I am from Switzerland and live in Melbourne.</p>
+                    <img src="static/img/Benoit.jpg"/>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <h2>What do I bring?</h2>
+                        <ul>
+                            <li>Python, R, SQL and MongoDB and more</li>
+                            <li><b>10+ years of experience</b> in the space industry</li>
+                            <li>Engineer = scientific mind and <b>problem-solver</b></li>
+                            <li>Business developer = <b>communication</b> and relationship building</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h2>What else do I do?</h2>
+                        <ul>
+                            <li>Spending time with my family and friends</li>
+                            <li>Scuba diving</li>
+                            <li>Long-distance running</li>
+                            <li>Read non-fiction (philosophy, history, psychology)</li>
+                            <li>Listen to podcasts (true crime, general knowledge)</li>
+                            <li>Programming for fun</li>
+                            <li>Cooking - and eating !</li>
+                            <li>Teaching myself bass guitar</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row py-5 m-0">
+                    <a id="anchor-programs"><h1>Experience</h1></a>
+                    <div class="col-md-6">
+                        <h2>Monash University Data Analytics Bootcamp</h2>
+                        <p>From August until November 2023, I was enrolled in the <a target="_blank" href="https://www.monash.edu/">Monash University</a>
+                        Data Analytics Bootcamp. During this 24-week program, I learned several data analytics processes and tools. I participated in
+                        four group projects in addition to submitting weekly assignments. These are listed here with link to the code I created.</p>
+                        <p>The tools we reviewed during the course were (non-exhaustive list:</p>
+                        <ul>
+                            <li>Excel and VBA programming</li>
+                            <li>Python, with modules such as pandas, request, Flask, SQLAlchemy and pymongo</li>
+                            <li>Use and creation of web API</li>
+                            <li>Postgres and sqlite SQL databases</li>
+                            <li>MongoDB No-SQL databases</li>
+                            <li>JavaScript, HTML and CSS</li>
+                            <li>Visualisation in Tableau</li>
+                            <li>Unsupervised learning</li>
+                            <li>Supervised learning</li>
+                            <li>Neural networks</li>
+                        </ul>
+                        <h3>Projects</h3>
+                        <ul>
+                            <li>Project 1: <a target="_blank" href="https://github.com/benoitchamot/MONU_project1">Project 1 code on GitHub</a></li>
+                            <li>Project 2: <a target="_blank" href="https://github.com/benoitchamot/Crowdfunding_ETL">Project 2 code on GitHub</a></li>
+                            <li>Project 3: <a target="_blank" href="https://github.com/benoitchamot/Crowdfunding_ETL">Project 3 code on GitHub</a></li>
+                        </ul>
+            
+                        <h3>Assignments</h3>
+                        <ul>
+                            <li>Module 1: <a target="_blank" href="https://drive.google.com/drive/folders/14K4zdRA3RxL3rzbxF3jUFOBDlrJjMUxH">Assignment folder on Google drive</a></li>
+                            <li>Module 2: <a target="_blank" href="https://github.com/benoitchamot/VBA-challenge">VBA-challenge on GitHub</a></li>
+                            <li>Module 3: <a target="_blank" href="https://github.com/benoitchamot/python-challenge">python-challenge on GitHub</a></li>
+                            <li>Module 4: <a target="_blank" href="https://github.com/benoitchamot/pandas-challenge">pandas-challenge on GitHub</a></li>
+                            <li>Module 5: <a target="_blank" href="https://github.com/benoitchamot/pymaceuticals">VBA-pymaceuticals on GitHub</a></li>
+                            <li>Module 6: <a target="_blank" href="https://github.com/benoitchamot/python-api-challenge">pythob-api-challenge on GitHub</a></li>
+                            <li>Module 7: See Project 1</li>
+                            <li>Module 8: See Project 1</li>
+                            <li>Module 9: <a target="_blank" href="https://github.com/benoitchamot/sql-challenge">sql-challenge on GitHub</a></li>
+                            <li>Module 10: <a target="_blank" href="https://github.com/benoitchamot/sqlalchemy-challenge">sqlalchemy-challenge on GitHub</a></li>
+                            <li>Module 11: <a target="_blank" href="https://github.com/benoitchamot/scraping-challenge">scraping-challenge on GitHub</a></li>
+                            <li>Module 12: <a target="_blank" href="https://github.com/benoitchamot/nosql-challenge">nosql-challenge on GitHub</a></li>
+                            <li>Module 13: See Project 2</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr>
+                
+                <footer>
+                    <div class="row">
+                        <!--<div class="col-md-4"></div>-->
+                        <div class="col-md-6">
+                            <p>&copy; 2023 Benoit Chamot</p>
+                        </div>
+                        <div class="col-md-6 text-md-end">
+                            <a href="https://github.com/benoitchamot/" class="text-dark" target="_blank">GitHub</a> | 
+                            <a href="https://linkedin.com/in/benoitchamot" class="text-dark" target="_blank">LinkedIn</a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        
+        <!-- SCRIPTS -->
+        <script src="static\js\slideshow.js"></script>
+
+    </body>
+</html>

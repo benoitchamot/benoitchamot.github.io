@@ -1,0 +1,142 @@
+/* Color palette: https://coolors.co/14453d-ff7f11-d1d1d1-275dad-823038 */
+/* Web hosting: https://checkout.hostgator.com/signup/shared/63066/36/top10best */
+
+:root {
+    --main_color: #31393C;
+    --grey: lightgrey;
+    --second_color: #231B1B;
+    --third_color: #C76E00;
+    --white: #ffffff;
+  }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--white);
+  }
+
+#row_projects {
+    background-color: var(--white);
+}
+
+.row h1 {
+    color: var(--third_color)
+}
+
+#row_about {
+    background-color: var(--grey);
+}
+
+#content-right {
+    position: absolute;
+    top: 150px;
+    left: 400px;
+    background-color: white;
+    margin: 0px;
+  }
+
+#content {
+    background-color: white;
+    margin: 0px;
+    padding: 20px;
+    min-height: 400px;
+  }
+
+#content ul{
+    margin-left: 30px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+#content h2 {
+    margin: 0px;
+    margin-top: 20px;
+  }
+
+#content p {
+    max-width: 700px;
+}
+
+#center {
+    position: absolute;
+    width: 100%;
+    margin: auto;
+}
+
+#title {
+    background-color: var(--main_color);
+    padding: 20px;
+}
+
+#title h1 {
+    margin: 0px;
+    color: white;
+    font-size: 60px;
+    font-weight: lighter;
+    min-width: 700px;
+}
+
+#menu {
+    min-width: 700px;
+    background-color: var(--second_color);
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* unvisited link */
+#menu a:link {
+    color: var(--third_color);
+    margin-right: 10px;
+  }
+  
+/* visited link */
+#menu a:visited {
+    color: var(--third_color);
+  }
+  
+/* mouse over link */
+#menu a:hover {
+    color: var(--grey);
+  }
+  
+/* selected link */
+#menu a:active {
+    color: var(--third_color);
+  }
+
+#footer {
+    height: 50px;
+    background-color: var(--main_color);
+    margin: 0px;
+    padding-top: 5px;
+}
+
+#footer p{
+    color: white;
+    position: relative;
+    top: 4px;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* unvisited link */
+a:link {
+    color: var(--second_color);
+  }
+  
+/* visited link */
+a:visited {
+    color: var(--second_color);
+  }
+  
+/* mouse over link */
+a:hover {
+    color: var(--third_color);
+  }
+  
+/* selected link */
+a:active {
+    color: var(--third_color);
+  }
